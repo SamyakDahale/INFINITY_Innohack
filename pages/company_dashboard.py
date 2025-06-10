@@ -145,17 +145,17 @@ st.markdown("""
     <div class="card">
         <div class="card-icon">💲</div>
         <div class="card-label">Total Revenue</div>
-        <div class="card-value">$1,235,000</div>
+        <div class="card-value">82,000</div>
     </div>
     <div class="card">
         <div class="card-icon">👥</div>
         <div class="card-label">Total Customers</div>
-        <div class="card-value">12,345</div>
+        <div class="card-value">7</div>
     </div>
     <div class="card">
         <div class="card-icon">🛡</div>
         <div class="card-label">Active Policies</div>
-        <div class="card-value">8,765</div>
+        <div class="card-value">11</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
