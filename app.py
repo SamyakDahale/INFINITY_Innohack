@@ -4,6 +4,58 @@ from firebase_admin import credentials, firestore
 
 st.set_page_config(page_title="Login / Sign Up", layout="centered")
 
+# === Custom Styling ===
+custom_style = """
+<style>
+    body {
+        background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+    [data-testid="stAppViewContainer"] {
+        background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    }
+    .block-container {
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+        background-color: #ffffffcc;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        color: #2d2d2d;
+        max-width: 500px;
+        margin: auto;
+    }
+    h1, h2, h3 {
+        color: #6a0572;
+        text-align: center;
+    }
+    .stButton>button {
+        background-color: #a18cd1;
+        color: white;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        border: none;
+        transition: 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #fbc2eb;
+        color: #6a0572;
+    }
+    .stRadio > div {
+        gap: 1rem;
+    }
+</style>
+"""
+st.markdown(custom_style, unsafe_allow_html=True)
+
+# === Hide Sidebar ===
+hide_sidebar = """
+<style>
+    [data-testid="stSidebar"], [data-testid="stSidebarNav"] {
+        display: none;
+    }
+</style>
+"""
+st.markdown(hide_sidebar, unsafe_allow_html=True)
+
 
 # Hide the Streamlit navigation (sidebar pages)
 hide_nav_style = """

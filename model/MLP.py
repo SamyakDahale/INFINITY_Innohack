@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import pickle
 
 # Load the dataset
-file_path = r"E:\MGM UDICT\Wings2_bkp\self create dataset\health_markers_dataset_with_missing14-02.csv"
+file_path = r"E:\MGM UDICT\CSMSS hackathon\model\health_markers_dataset_with_outliers.csv"
 df = pd.read_csv(file_path)
 
 # Assuming last column is the target variable
