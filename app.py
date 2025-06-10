@@ -26,7 +26,9 @@ st.markdown(hide_nav_style, unsafe_allow_html=True)
 if not firebase_admin._apps:
     cred = credentials.Certificate("secret.toml")  # or your actual path
     firebase_admin.initialize_app(cred)
-    
+
+db = firestore.client()
+
 # === Page Config ===
 st.title("🔐 Welcome to Health Profile Portal")
 
