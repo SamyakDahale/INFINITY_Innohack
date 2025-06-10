@@ -6,11 +6,12 @@ import os
 
 
 # === Initialize Firebase App ===
-firebase_config = st.secrets["firebase"]
-cred = credentials.Certificate(dict(firebase_config))
-firebase_admin.initialize_app(cred)
+if not firebase_admin._apps:
+    cred = credentials.Certificate("secret.toml")  # or your actual path
+    firebase_admin.initialize_app(cred)
 
 db = firestore.client()
+
 import sidebar
 
 

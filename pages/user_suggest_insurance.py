@@ -10,6 +10,11 @@ from geopy.geocoders import Nominatim
 import folium
 from streamlit_folium import st_folium
 
+
+if not firebase_admin._apps:
+    cred = credentials.Certificate("secret.toml")  # or your actual path
+    firebase_admin.initialize_app(cred)
+
 db = firestore.client()
 
 # === Custom CSS for Cards ===
