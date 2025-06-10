@@ -143,7 +143,7 @@ if st.session_state.show_results:
                     with col2:
                         geolocator = Nominatim(user_agent="insurance_map")
                         try:
-                            location = geolocator.geocode(company_address)
+                            location = geolocator.geocode(company_address, timeout=10)
                             if location:
                                 m = folium.Map(location=[location.latitude, location.longitude], zoom_start=13)
                                 folium.Marker([location.latitude, location.longitude], tooltip=company_username).add_to(m)
@@ -151,7 +151,7 @@ if st.session_state.show_results:
                             else:
                                 st.warning("📍 Location not found")
                         except Exception as e:
-                            st.error(f"Map error: {e}")
+                            st.error("🌐 Geolocation failed. Try again later.")
                 else:
                     st.info("Company data not found.")
             else:
