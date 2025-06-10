@@ -1,0 +1,144 @@
+/* ---------- Top Navigation Bar ---------- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 24px;
+    color: #1f2937;
+}
+
+
+/* Logo section */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Top buttons (e.g., Logout, Chatbot) */
+.top-buttons, .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-purple {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #5a38f4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+}
+
+.welcome-text {
+    font-weight: 600;
+    color: #4b5563;
+}
+
+/* Tab Button Styling */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tab-button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    color: #111827;
+}
+
+/* Card Container for Analytics or Widgets */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 22%;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #9333ea;
+    margin-bottom: 0.5rem;
+}
+
+.card-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-value {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #9333ea;
+}
+
+/* Input Row Styling */
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-label {
+    width: 120px;
+    font-weight: 600;
+}
+
+.input-box {
+    flex: 1;
+}
