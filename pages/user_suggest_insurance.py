@@ -14,8 +14,7 @@ import json
 # Only initialize Firebase if not already initialized
 if not firebase_admin._apps:
     # Load credentials from Streamlit secrets
-    firebase_credentials = json.loads(json.dumps(st.secrets["firebase"]))
-    cred = credentials.Certificate(firebase_credentials)
+    cred = credentials.Certificate(dict(st.secrets["firebase"]))
     firebase_admin.initialize_app(cred)
 
 # Get Firestore client

@@ -5,7 +5,6 @@ import io
 import numpy as np
 import pickle
 from PIL import Image
-import json
 
 # Load model and tools
 with open("model.pkl", "rb") as model_file:
